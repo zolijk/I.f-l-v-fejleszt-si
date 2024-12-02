@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Undergroundby</title>
+    <link rel="stylesheet" href="Under.css">
+    <script src="Under.js"></script>
+
+
+
+</head>
+<body>
+    <script>
+        document.getElementById('checkout').addEventListener('click', () => {
+            alert('A gomb működik!');
+        });
+    </script>
+    <header>
+        <h1>Undergroundby</h1>
+        <nav>
+            <a href="rólunk.html">Rólunk</a>
+            <a href="cart.html">Kosár</a>
+            <a href="#arrivals">Új kollekció</a>
+        </nav>
+    </header>
+
+    <section id="products">
+        <h2>Termékeink</h2>
+        <div class="product-list">
+            <div class="product" data-id="1">
+                <img src="paradise.png" title="Undergroundby T-shirt" alt="Undergroundby T-shirt">
+                <h3>Póló</h3>
+                <p>Ár: 11000 Ft</p>
+                <button onclick="addToCart(1)">Kosárba</button>
+            </div>
+            <div class="product" data-id="2">
+                <img src="Untitled design1.png" title="Undergroundby Hoodie" alt="Undergroundby Hoodie">
+                <h3>Pulóver</h3>
+                <p>Ár: 24000 Ft</p>
+                <button onclick="addToCart(2)">Kosárba</button>
+            </div>
+         
+            <div class="stylish-div">
+                <h2>Üdvözöllek a webshopomban</h2>
+                <p>Remélem megtalálod azt amit szeretnél, a minőségről mi gondoskodunk. Ezen nem kell aggódnod! Ha bármit szeretnél tudni rólunk akkor kattints a 'Rólunk' fülre és többet megtudhatsz a cégünkről.</p>
+                <p>Bármilyen probléma esetén nyugodtan keresd az ügyfélszolgálatunkat vagy email-ben tájékoztass a problémádról Kellemes vásárlást!</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="cart">
+        <h2>Kosár</h2>
+        <div id="cart-items">
+           
+        </div>
+        <p id="total-price">Összesen: 0 Ft</p>
+        <button id="checkout" >Fizetés</button>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Undergroundby. Összes jog fenntartva.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
